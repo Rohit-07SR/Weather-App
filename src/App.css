@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75,100..900;1,75,100..900&display=swap');
+
+*{
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(91, 91, 91);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  
+  width: 400px;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px black;
+}
+
+.input-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 2px solid aqua;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.cityinput{
+  flex: 1;
+  height: 30px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  padding: 10px;
+}
+
+.search-icon{
+  background-color: white;
+  padding-top: 17px;
+  padding-right: 12px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.image{
+  text-align: center;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.image img{
+  width: 150px;
+  height: 150px;
+  margin-top: 30px;
+}
+
+.temp, .location, .country{
+  margin-top: 5px;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.temp{
+  font-weight: 1000;
+  color: rgb(168, 0, 81);
+}
+
+.location{
+  color: rgb(255, 166, 0);
+  font-weight: 1000;
+}
+
+.country{
+  color: blue;
+  font-weight: bolder;;
+}
+
+.botctrl{
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.cord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.cord div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.humidity-percent, .cord div span:nth-child(2){
+  font-weight: bold;
+  font-size:large;
+  padding-top: 10px;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+}
+
+.data-container{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding-top: 30px;
+  margin-top: 10px;
+}
+
+.text{
+  font-style: italic;
+}
+
+.loading-message, .error-message, .city-not-found{
+  margin-top: 10px;
+  color:#888;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+}
+
